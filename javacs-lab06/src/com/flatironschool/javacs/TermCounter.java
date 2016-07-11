@@ -36,9 +36,20 @@ public class TermCounter {
 	 * @return
 	 */
 	public int size() {
-        // TODO: fill this in.
-		return -1;
+        int number = 0;
+        for (String key: keySet()){
+        	number += get(key);
+        }
+		return number;
 	}
+
+
+
+// for (String key: keySet()) {
+// 			Integer count = get(key);
+// 			System.out.println(key + ", " + count);
+// 		}
+// 		System.out.println("Total of all counts = " + size());
 
 	/**
 	 * Takes a collection of Elements and counts their words.
